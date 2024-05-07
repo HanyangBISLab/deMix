@@ -18,7 +18,35 @@
 </pre>
 ## 2. Parameters (See foo.txt file)
 <pre>
+- Peptide=[FILENAME]: 
+  Specifies path to the file of peptides (in TSV format)
+  The TSV file must include three columns for peptides, charge states, mz values.  
+  Make sure that their column names (in the header) are 'peptide', 'charge', 'mz'. 
+  They can be in any order. (See a sample file, foo_pept.tsv in the testdata directory, from https://prix.hanyang.ac.kr/download/deMixTestSample.zip)
+  The TSV file may include different columns (they will be ignored).
 
+- CTRLData= [FILENAME]: 
+  Specifies the spectra file of a control experiment without HDX
+  mzXML (centroid) file is allowed. 
+	Elution time spans of input peptides are determined using this file.
+
+- HDXData=[Label],[spectra file]: 
+  Specifies the spectra file of HDX experiments with the D2O labeling
+  mzXML (centroid) file is allowed. 
+  Multiple files can be specified using different labeling as below.
+  e.g., HDXData=30s, D:/mydir/my_d2o_30s.mzXML
+        HDXData=20m, D:/mydir/my_d2o_10m.mzXML
+        HDXData=30m, D:/mydir/my_d2o_30m.mzXML
+
+- MassTolerance=[MASS_TOLERANCE]: 
+  Sets a peptide mass tolerance in dalton or ppm. The default value is 10ppm.
+  e.g., MassTolerance=15ppm
+  e.g., MassTolerance=0.4da
+
+- Protein=[FILENAME]: 
+  Specifies path to the file of protein sequences (*.fasta format)
+  Optional. If it's specified, start and end positons of peptides will be reported.
+  e.g., Protein= D:/mydir/my_protein.fasta
 </pre>
 ## 3. Citation
 <pre>
@@ -28,10 +56,10 @@
 </pre>
 ## 4. Rights and Permissions
 <pre>
-- deMix by 2024 is licensed under Creative Commons Attribution-ShareAlike 4.0 International, 
-  which permits use, sharing, adaptation, distribution and reproduction in any medium or format, 
-  as long as you give appropriate credit to the original author(s) and the source, 
-  provide a link to the Creative Commons license, and indicate if changes were made.
+- deMix © 2024 is licensed under Creative Commons Attribution-ShareAlike 4.0 International.
+  This license requires that reusers give credit to the creator. It allows reusers to distribute, 
+  remix, adapt, and build upon the material in any medium or format, even for commercial purposes. 
+  If others remix, adapt, or build upon the material, they must license the modified material under identical terms.
   To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/
 </pre>
 
