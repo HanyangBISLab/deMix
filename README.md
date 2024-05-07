@@ -14,7 +14,8 @@
                       : results_name_DdeuAnal.tsv and results_name_HDXProfile.tsv are generated.
 - Example1 : java -jar deMix.jar -i foo.params -o hdx.foo
 - Example2 : java -jar deMix.jar -i foo.params
-- Requirement : deMix requires Java 1.7 or later. Visit http://www.oracle.com/technetwork/java/index.html 
+- Requirement : deMix requires Java 1.7 or later. 
+	        Visit http://www.oracle.com/technetwork/java/index.html 
 </pre>
 ## 2. Parameters (See foo.txt file)
 <pre>
