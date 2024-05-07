@@ -8,8 +8,8 @@
 <pre>
 - Command  : java -jar deMix.jar [options] [file]
   Options  :
-  -i <parameter_file> : Config file path for search parameters [Required]
-  -o <results_name>   : Name of analysis results [Optional]
+  -i [parameter_file] : Config file path for search parameters [Required]
+  -o [results_name]   : Name of analysis results [Optional]
                       : If not specified, the file name in 'Peptide=' parameter is used as the results_name.
                       : results_name_DdeuAnal.tsv and results_name_HDXProfile.tsv are generated.
 - Example1 : java -jar deMix.jar -i foo.params -o hdx.foo
