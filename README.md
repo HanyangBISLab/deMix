@@ -1,6 +1,8 @@
 # deMix
 ## Hydrogen Deuterium eXchange Analysis 
-
+Amide hydrogen/deuterium exchange (HDX) coupled with mass spectrometry (MS) is one of the most favorable tools for characterizing the protein dynamics and changes of protein conformation.
+deMix is a fully automated software for the HDX-MS data analysis. deMix deals directly with the deuterated isotopic distributions, but not considering their centroid masses and is designed to be robust over random noises. 
+In addition, deMix can also detect a bimodal deuterated distribution, arising from EX1 behavior or heterogeneous peptides in conformational isomer proteins.
 <hr>
 
 
